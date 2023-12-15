@@ -24,11 +24,18 @@
 			<Item Name="Move motor.ctl" Type="VI" URL="../Support/Move motor.ctl"/>
 			<Item Name="Stop button.ctl" Type="VI" URL="../Support/Stop button.ctl"/>
 		</Item>
-		<Item Name="Modules" Type="Folder">
+		<Item Name="DQMH Modules" Type="Folder">
 			<Item Name="Configuration.lvlib" Type="Library" URL="../Libraries/Configuration/Configuration.lvlib"/>
 			<Item Name="GUI.lvlib" Type="Library" URL="../Libraries/GUI/GUI.lvlib"/>
 			<Item Name="NI DAQ.lvlib" Type="Library" URL="../Libraries/NI DAQ/NI DAQ.lvlib"/>
 			<Item Name="TDS1002 Oscilloscope.lvlib" Type="Library" URL="../Libraries/TDS1002 Oscilloscope/TDS1002 Oscilloscope.lvlib"/>
+		</Item>
+		<Item Name="Libraries" Type="Folder">
+			<Item Name="Control de MaP.lvlib" Type="Library" URL="../Libraries/Control de MaP/Control de MaP.lvlib"/>
+		</Item>
+		<Item Name="Support" Type="Folder">
+			<Item Name="Example States.ctl" Type="VI" URL="../Support/Example States.ctl"/>
+			<Item Name="Program data--cluster.ctl" Type="VI" URL="../Support/Program data--cluster.ctl"/>
 		</Item>
 		<Item Name="Testers" Type="Folder">
 			<Item Name="Test Configuration API.vi" Type="VI" URL="../Libraries/Configuration/Test Configuration API.vi"/>
@@ -36,6 +43,7 @@
 			<Item Name="Test NI DAQ API.vi" Type="VI" URL="../Libraries/NI DAQ/Test NI DAQ API.vi"/>
 			<Item Name="Test TDS1002 Oscilloscope API.vi" Type="VI" URL="../Libraries/TDS1002 Oscilloscope/Test TDS1002 Oscilloscope API.vi"/>
 		</Item>
+		<Item Name="Main MSP.vi" Type="VI" URL="../Main MSP.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="Tektronix TDS 200 1000 2000 Series.lvlib" Type="Library" URL="/&lt;instrlib&gt;/Tektronix TDS 200 1000 2000 Series/Tektronix TDS 200 1000 2000 Series.lvlib"/>
@@ -69,6 +77,8 @@
 				<Item Name="AddNamedSemaphorePrefix.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/AddNamedSemaphorePrefix.vi"/>
 				<Item Name="Application Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Application Directory.vi"/>
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
+				<Item Name="Check for Equality.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/Check for Equality.vi"/>
+				<Item Name="Check for multiple of dt.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/Check for multiple of dt.vi"/>
 				<Item Name="Check if File or Folder Exists.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Check if File or Folder Exists.vi"/>
 				<Item Name="Check Special Tags.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Check Special Tags.vi"/>
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
@@ -270,7 +280,10 @@
 				<Item Name="DialogType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/DialogType.ctl"/>
 				<Item Name="DialogTypeEnum.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/DialogTypeEnum.ctl"/>
 				<Item Name="DTbl Digital Size.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DTblOps.llb/DTbl Digital Size.vi"/>
+				<Item Name="DTbl Get Digital Value.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DTblOps.llb/DTbl Get Digital Value.vi"/>
 				<Item Name="DTbl Uncompress Digital.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DTblOps.llb/DTbl Uncompress Digital.vi"/>
+				<Item Name="DWDT Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DWDTOps.llb/DWDT Error Code.vi"/>
+				<Item Name="DWDT Get XY Value.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DWDTOps.llb/DWDT Get XY Value.vi"/>
 				<Item Name="DWDT Uncompress Digital.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DWDTOps.llb/DWDT Uncompress Digital.vi"/>
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
 				<Item Name="Error Code Database.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Code Database.vi"/>
@@ -283,6 +296,7 @@
 				<Item Name="General Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler.vi"/>
 				<Item Name="Get String Text Bounds.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Get String Text Bounds.vi"/>
 				<Item Name="Get Text Rect.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Get Text Rect.vi"/>
+				<Item Name="Get XY Value.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/Get XY Value.vi"/>
 				<Item Name="GetHelpDir.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetHelpDir.vi"/>
 				<Item Name="GetNamedRendezvousPrefix.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/rendezvs.llb/GetNamedRendezvousPrefix.vi"/>
 				<Item Name="GetNamedSemaphorePrefix.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/GetNamedSemaphorePrefix.vi"/>
@@ -323,15 +337,28 @@
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
 				<Item Name="usereventprio.ctl" Type="VI" URL="/&lt;vilib&gt;/event_ctls.llb/usereventprio.ctl"/>
 				<Item Name="Validate Semaphore Size.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/Validate Semaphore Size.vi"/>
+				<Item Name="VISA Configure Serial Port" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Configure Serial Port"/>
+				<Item Name="VISA Configure Serial Port (Instr).vi" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Configure Serial Port (Instr).vi"/>
+				<Item Name="VISA Configure Serial Port (Serial Instr).vi" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Configure Serial Port (Serial Instr).vi"/>
+				<Item Name="VISA Flush IO Buffer Mask.ctl" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Flush IO Buffer Mask.ctl"/>
+				<Item Name="VISA Set IO Buffer Mask.ctl" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Set IO Buffer Mask.ctl"/>
 				<Item Name="Wait at Rendezvous.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/rendezvs.llb/Wait at Rendezvous.vi"/>
+				<Item Name="WDT Get XY Value CDB.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Get XY Value CDB.vi"/>
+				<Item Name="WDT Get XY Value CXT.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Get XY Value CXT.vi"/>
+				<Item Name="WDT Get XY Value DBL.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Get XY Value DBL.vi"/>
+				<Item Name="WDT Get XY Value EXT.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Get XY Value EXT.vi"/>
+				<Item Name="WDT Get XY Value I16.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Get XY Value I16.vi"/>
+				<Item Name="WDT Get XY Value I32.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Get XY Value I32.vi"/>
+				<Item Name="WDT Get XY Value I64.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/WDT Get XY Value I64.vi"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
 			<Item Name="nilvaiu.dll" Type="Document" URL="nilvaiu.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="Stop motor.ctl" Type="VI" URL="../Support/Stop motor.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
-			<Item Name="Application" Type="EXE">
+			<Item Name="Large stage app" Type="EXE">
 				<Property Name="App_copyErrors" Type="Bool">true</Property>
 				<Property Name="App_INI_aliasGUID" Type="Str">{4B52CB40-1C8D-48AD-AB2B-A0E1349FA582}</Property>
 				<Property Name="App_INI_GUID" Type="Str">{6B0EA98A-7E51-439B-83A5-7AB3378D1516}</Property>
@@ -339,29 +366,29 @@
 				<Property Name="App_serverType" Type="Int">0</Property>
 				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
 				<Property Name="Bld_buildCacheID" Type="Str">{6DA37D10-1A68-4E1D-9331-4A192C5BBFDB}</Property>
-				<Property Name="Bld_buildSpecName" Type="Str">Application</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">Large stage app</Property>
 				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/Application</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/Large stage app</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{F8750C02-F9A3-4D5E-B73C-1D99C1F64DFA}</Property>
-				<Property Name="Bld_version.build" Type="Int">5</Property>
+				<Property Name="Bld_version.build" Type="Int">6</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Large stage controller.exe</Property>
-				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/Application/Large stage controller.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/Large stage app/Large stage controller.exe</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[0].type" Type="Str">App</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/Application/data</Property>
+				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/Large stage app/data</Property>
 				<Property Name="Destination[2].destName" Type="Str">Config</Property>
-				<Property Name="Destination[2].path" Type="Path">../builds/NI_AB_PROJECTNAME/Application/config</Property>
+				<Property Name="Destination[2].path" Type="Path">../builds/NI_AB_PROJECTNAME/Large stage app/config</Property>
 				<Property Name="DestinationCount" Type="Int">3</Property>
-				<Property Name="Source[0].itemID" Type="Str">{89D56C39-DE8C-45EF-890D-E4B37710F4A5}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{4C9D4405-BCA6-4F64-ADBD-BF8CDCFA757E}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Modules/GUI.lvlib/Main.vi</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/DQMH Modules/GUI.lvlib/Main.vi</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
 				<Property Name="Source[2].Container.applyDestination" Type="Bool">true</Property>
@@ -373,15 +400,15 @@
 				<Property Name="Source[2].type" Type="Str">Container</Property>
 				<Property Name="SourceCount" Type="Int">3</Property>
 				<Property Name="TgtF_companyName" Type="Str">Centro de Investigaciones en Optica</Property>
-				<Property Name="TgtF_fileDescription" Type="Str">Application</Property>
-				<Property Name="TgtF_internalName" Type="Str">Application</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">Large stage app</Property>
+				<Property Name="TgtF_internalName" Type="Str">Large stage app</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2023 Centro de Investigaciones en Optica</Property>
-				<Property Name="TgtF_productName" Type="Str">Application</Property>
+				<Property Name="TgtF_productName" Type="Str">Large stage app</Property>
 				<Property Name="TgtF_targetfileGUID" Type="Str">{B838E094-38F0-4310-9E07-D69D32935483}</Property>
 				<Property Name="TgtF_targetfileName" Type="Str">Large stage controller.exe</Property>
 				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
 			</Item>
-			<Item Name="My Installer" Type="Installer">
+			<Item Name="Large stage installer" Type="Installer">
 				<Property Name="Destination[0].name" Type="Str">Stepper motor control - DAQ</Property>
 				<Property Name="Destination[0].parent" Type="Str">{3912416A-D2E5-411B-AFEE-B63654D690C0}</Property>
 				<Property Name="Destination[0].tag" Type="Str">{3839D1C9-5B4E-4005-A5AD-D578D3C25777}</Property>
@@ -447,13 +474,13 @@
 				<Property Name="DistPartCount" Type="Int">5</Property>
 				<Property Name="INST_author" Type="Str">Centro de Investigaciones en Optica</Property>
 				<Property Name="INST_autoIncrement" Type="Bool">true</Property>
-				<Property Name="INST_buildLocation" Type="Path">../builds/Large stage controller/My Installer</Property>
+				<Property Name="INST_buildLocation" Type="Path">../builds/Large stage controller/Large stage installer</Property>
 				<Property Name="INST_buildLocation.type" Type="Str">relativeToCommon</Property>
-				<Property Name="INST_buildSpecName" Type="Str">My Installer</Property>
+				<Property Name="INST_buildSpecName" Type="Str">Large stage installer</Property>
 				<Property Name="INST_defaultDir" Type="Str">{3839D1C9-5B4E-4005-A5AD-D578D3C25777}</Property>
 				<Property Name="INST_installerName" Type="Str">install.exe</Property>
 				<Property Name="INST_productName" Type="Str">Large stage controller</Property>
-				<Property Name="INST_productVersion" Type="Str">1.0.1</Property>
+				<Property Name="INST_productVersion" Type="Str">1.0.2</Property>
 				<Property Name="InstSpecBitness" Type="Str">32-bit</Property>
 				<Property Name="InstSpecVersion" Type="Str">20008011</Property>
 				<Property Name="MSI_arpCompany" Type="Str">Centro de Investigaciones en Optica</Property>
@@ -468,7 +495,7 @@
 				<Property Name="RegDestCount" Type="Int">1</Property>
 				<Property Name="Source[0].dest" Type="Str">{3839D1C9-5B4E-4005-A5AD-D578D3C25777}</Property>
 				<Property Name="Source[0].File[0].dest" Type="Str">{3839D1C9-5B4E-4005-A5AD-D578D3C25777}</Property>
-				<Property Name="Source[0].File[0].name" Type="Str">Large stage.exe</Property>
+				<Property Name="Source[0].File[0].name" Type="Str">Large stage controller.exe</Property>
 				<Property Name="Source[0].File[0].Shortcut[0].destIndex" Type="Int">1</Property>
 				<Property Name="Source[0].File[0].Shortcut[0].name" Type="Str">Large stage controller</Property>
 				<Property Name="Source[0].File[0].Shortcut[0].subDir" Type="Str"></Property>
@@ -478,8 +505,8 @@
 				<Property Name="Source[0].File[0].ShortcutCount" Type="Int">2</Property>
 				<Property Name="Source[0].File[0].tag" Type="Str">{B838E094-38F0-4310-9E07-D69D32935483}</Property>
 				<Property Name="Source[0].FileCount" Type="Int">1</Property>
-				<Property Name="Source[0].name" Type="Str">Application</Property>
-				<Property Name="Source[0].tag" Type="Ref">/My Computer/Build Specifications/Application</Property>
+				<Property Name="Source[0].name" Type="Str">Large stage app</Property>
+				<Property Name="Source[0].tag" Type="Ref">/My Computer/Build Specifications/Large stage app</Property>
 				<Property Name="Source[0].type" Type="Str">EXE</Property>
 				<Property Name="SourceCount" Type="Int">1</Property>
 			</Item>
