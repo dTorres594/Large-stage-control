@@ -40,12 +40,19 @@
 				<Item Name="Read AI (Reply Payload)--cluster.ctl" Type="VI" URL="../Read AI (Reply Payload)--cluster.ctl"/>
 				<Item Name="Create AO channel Argument--cluster.ctl" Type="VI" URL="../Create AO channel Argument--cluster.ctl"/>
 				<Item Name="Write AO Argument--cluster.ctl" Type="VI" URL="../Write AO Argument--cluster.ctl"/>
+				<Item Name="Validate connection Argument--cluster.ctl" Type="VI" URL="../Validate connection Argument--cluster.ctl"/>
+				<Item Name="Validate connection (Reply Payload)--cluster.ctl" Type="VI" URL="../Validate connection (Reply Payload)--cluster.ctl"/>
+				<Item Name="Start continous acquisition Argument--cluster.ctl" Type="VI" URL="../Start continous acquisition Argument--cluster.ctl"/>
+				<Item Name="Stop continuous acquisition Argument--cluster.ctl" Type="VI" URL="../Stop continuous acquisition Argument--cluster.ctl"/>
 			</Item>
 			<Item Name="Broadcast" Type="Folder">
 				<Item Name="Did Init Argument--cluster.ctl" Type="VI" URL="../Did Init Argument--cluster.ctl"/>
 				<Item Name="Status Updated Argument--cluster.ctl" Type="VI" URL="../Status Updated Argument--cluster.ctl"/>
 				<Item Name="Error Reported Argument--cluster.ctl" Type="VI" URL="../Error Reported Argument--cluster.ctl"/>
-				<Item Name="Data acquired Argument--cluster.ctl" Type="VI" URL="../Data acquired Argument--cluster.ctl"/>
+				<Item Name="Digital data acquired Argument--cluster.ctl" Type="VI" URL="../Digital data acquired Argument--cluster.ctl"/>
+				<Item Name="Device connected Argument--cluster.ctl" Type="VI" URL="../Device connected Argument--cluster.ctl"/>
+				<Item Name="Connection failed Argument--cluster.ctl" Type="VI" URL="../Connection failed Argument--cluster.ctl"/>
+				<Item Name="Analog data acquired Argument--cluster.ctl" Type="VI" URL="../Analog data acquired Argument--cluster.ctl"/>
 			</Item>
 		</Item>
 		<Item Name="Requests" Type="Folder">
@@ -68,6 +75,9 @@
 			<Item Name="Read AI.vi" Type="VI" URL="../Read AI.vi"/>
 			<Item Name="Create AO channel.vi" Type="VI" URL="../Create AO channel.vi"/>
 			<Item Name="Write AO.vi" Type="VI" URL="../Write AO.vi"/>
+			<Item Name="Validate connection.vi" Type="VI" URL="../Validate connection.vi"/>
+			<Item Name="Start continous acquisition.vi" Type="VI" URL="../Start continous acquisition.vi"/>
+			<Item Name="Stop continuous acquisition.vi" Type="VI" URL="../Stop continuous acquisition.vi"/>
 		</Item>
 		<Item Name="Start Module.vi" Type="VI" URL="../Start Module.vi"/>
 		<Item Name="Synchronize Module Events.vi" Type="VI" URL="../Synchronize Module Events.vi"/>
@@ -85,7 +95,10 @@
 		<Item Name="Error Reported.vi" Type="VI" URL="../Error Reported.vi"/>
 		<Item Name="Module Did Stop.vi" Type="VI" URL="../Module Did Stop.vi"/>
 		<Item Name="Update Module Execution Status.vi" Type="VI" URL="../Update Module Execution Status.vi"/>
-		<Item Name="Data acquired.vi" Type="VI" URL="../Data acquired.vi"/>
+		<Item Name="Digital data acquired.vi" Type="VI" URL="../Digital data acquired.vi"/>
+		<Item Name="Device connected.vi" Type="VI" URL="../Device connected.vi"/>
+		<Item Name="Connection failed.vi" Type="VI" URL="../Connection failed.vi"/>
+		<Item Name="Analog data acquired.vi" Type="VI" URL="../Analog data acquired.vi"/>
 	</Item>
 	<Item Name="Requests" Type="Folder">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
@@ -146,6 +159,10 @@
 		<Item Name="Continuous aquisition params.ctl" Type="VI" URL="../Support/Continuous aquisition params.ctl"/>
 		<Item Name="Task list.ctl" Type="VI" URL="../Support/Task list.ctl"/>
 		<Item Name="AI config parameters--cluster.ctl" Type="VI" URL="../AI config parameters--cluster.ctl"/>
+		<Item Name="Create user events.vi" Type="VI" URL="../Support/Create user events.vi"/>
+		<Item Name="Destroy user events.vi" Type="VI" URL="../Support/Destroy user events.vi"/>
+		<Item Name="Wake HL.vi" Type="VI" URL="../Support/Wake HL.vi"/>
+		<Item Name="Sleep HL -- subVI.vi" Type="VI" URL="../Support/Sleep HL -- subVI.vi"/>
 	</Item>
 	<Item Name="Main.vi" Type="VI" URL="../Main.vi">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
