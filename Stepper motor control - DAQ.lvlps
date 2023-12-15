@@ -9,3 +9,11 @@ Cache_Path[Path] Line0002 = "{6DA37D10-1A68-4E1D-9331-4A192C5BBFDB}.txt"
 Cache_Path[Path] Line0001 = "/C/Users/Diego Torres/AppData/Local/Temp/AB_Cache_"
 Cache_Path[Path] Line0002 = "{F8750C02-F9A3-4D5E-B73C-1D99C1F64DFA}.txt"
 
+[AB_Cache_{E99027C8-49F5-4CA2-9CA7-D7B3D2852C89}]
+Cache_Path[Path] Line0001 = "/C/Users/Diego Torres/AppData/Local/Temp/AB_Cache_"
+Cache_Path[Path] Line0002 = "{E99027C8-49F5-4CA2-9CA7-D7B3D2852C89}.txt"
+
+[AB_Cache_{98F1F336-A782-4A9F-ACF9-9B757BCECD72}]
+Cache_Path[Path] Line0001 = "/C/Users/Diego Torres/AppData/Local/Temp/AB_Cache_"
+Cache_Path[Path] Line0002 = "{98F1F336-A782-4A9F-ACF9-9B757BCECD72}.txt"
+

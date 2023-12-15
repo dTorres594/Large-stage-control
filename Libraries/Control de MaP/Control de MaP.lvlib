@@ -6,6 +6,12 @@
 	<Property Name="NI.Lib.SourceVersion" Type="Int">536903680</Property>
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Item Name="3rd-party" Type="Folder">
+		<Item Name="MSP driver" Type="Folder">
+			<Item Name="DPinst.exe" Type="Document" URL="../MSP driver/DPinst.exe"/>
+			<Item Name="DPInst64.exe" Type="Document" URL="../MSP driver/DPInst64.exe"/>
+			<Item Name="msp430tools.cat" Type="Document" URL="../MSP driver/msp430tools.cat"/>
+			<Item Name="msp430tools.inf" Type="Document" URL="../MSP driver/msp430tools.inf"/>
+		</Item>
 		<Item Name="ENA_MOT_V7.ino" Type="Document" URL="../ENA_MOT_V7.ino"/>
 	</Item>
 	<Item Name="Controls" Type="Folder">
