@@ -12,7 +12,7 @@
 			<Item Name="msp430tools.cat" Type="Document" URL="../MSP driver/msp430tools.cat"/>
 			<Item Name="msp430tools.inf" Type="Document" URL="../MSP driver/msp430tools.inf"/>
 		</Item>
-		<Item Name="ENA_MOT_V7.ino" Type="Document" URL="../ENA_MOT_V7.ino"/>
+		<Item Name="ENA_MOT_V7.ino" Type="Document" URL="../ENA_MOT_V7/ENA_MOT_V7.ino"/>
 	</Item>
 	<Item Name="Controls" Type="Folder">
 		<Item Name="Com Port Options.ctl" Type="VI" URL="../Public/Controls/Com Port Options.ctl"/>
