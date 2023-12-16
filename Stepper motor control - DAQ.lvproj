@@ -34,6 +34,7 @@
 			<Item Name="Control de MaP.lvlib" Type="Library" URL="../Libraries/Control de MaP/Control de MaP.lvlib"/>
 		</Item>
 		<Item Name="Support" Type="Folder">
+			<Item Name="Configure DAQ channel.vi" Type="VI" URL="../Support/Configure DAQ channel.vi"/>
 			<Item Name="Example States.ctl" Type="VI" URL="../Support/Example States.ctl"/>
 			<Item Name="Program data--cluster.ctl" Type="VI" URL="../Support/Program data--cluster.ctl"/>
 		</Item>

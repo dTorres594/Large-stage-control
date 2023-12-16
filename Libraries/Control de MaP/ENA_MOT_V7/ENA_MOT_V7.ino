@@ -10,6 +10,7 @@ const int FULL = 2;
 const int GET_POS = 'G';
 const int STOP = 'S';
 const int CLEAR = 'C';
+const int ID = 'I';
 
 int bip[]={     //es el arreglo donde se guardaran los pines para la salidas digitales de los bipolares 
   35,36,37,38}; //pines de salida
@@ -44,7 +45,7 @@ void setup()
   bu_0();             //Apaga las salidas para el motor bipolar.
   bb_0();             //apaga las salidas para el motor unipolar.  
   delay(100);         //Espera de 100 milisegundos.
-  Serial.println("Comienzo");  //Dice que el motor se apago.
+  Serial.println("Comienzo");  
   delay(100);         //Espera de 100 milisegundos. 
 }                     //Fin del void setup.
 
@@ -89,6 +90,10 @@ void loop(){                    //Inicio del void loop.
         bi[i] = 0;
       }
       Serial.println("Cleared");
+    }
+
+    else if (motor == ID){
+      Serial.println("MSP430");
     }
 
     else if (motor == 1 || motor == 2){ // Inicia rutina de motor
