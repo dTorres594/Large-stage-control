@@ -53,4 +53,5 @@
 			<Item Name="Get motor position.vi" Type="VI" URL="../Public/Get motor position.vi"/>
 		</Item>
 	</Item>
+	<Item Name="Get device ID.vi" Type="VI" URL="../Public/Get device ID.vi"/>
 </Library>
