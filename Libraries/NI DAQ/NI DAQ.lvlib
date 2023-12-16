@@ -44,6 +44,7 @@
 				<Item Name="Validate connection (Reply Payload)--cluster.ctl" Type="VI" URL="../Validate connection (Reply Payload)--cluster.ctl"/>
 				<Item Name="Start continous acquisition Argument--cluster.ctl" Type="VI" URL="../Start continous acquisition Argument--cluster.ctl"/>
 				<Item Name="Stop continuous acquisition Argument--cluster.ctl" Type="VI" URL="../Stop continuous acquisition Argument--cluster.ctl"/>
+				<Item Name="Delete task Argument--cluster.ctl" Type="VI" URL="../Delete task Argument--cluster.ctl"/>
 			</Item>
 			<Item Name="Broadcast" Type="Folder">
 				<Item Name="Did Init Argument--cluster.ctl" Type="VI" URL="../Did Init Argument--cluster.ctl"/>
@@ -79,6 +80,7 @@
 			<Item Name="Validate connection.vi" Type="VI" URL="../Validate connection.vi"/>
 			<Item Name="Start continous acquisition.vi" Type="VI" URL="../Start continous acquisition.vi"/>
 			<Item Name="Stop continuous acquisition.vi" Type="VI" URL="../Stop continuous acquisition.vi"/>
+			<Item Name="Delete task.vi" Type="VI" URL="../Delete task.vi"/>
 		</Item>
 		<Item Name="Start Module.vi" Type="VI" URL="../Start Module.vi"/>
 		<Item Name="Synchronize Module Events.vi" Type="VI" URL="../Synchronize Module Events.vi"/>
