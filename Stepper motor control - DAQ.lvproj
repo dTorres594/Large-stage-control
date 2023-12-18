@@ -375,7 +375,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{F8750C02-F9A3-4D5E-B73C-1D99C1F64DFA}</Property>
-				<Property Name="Bld_version.build" Type="Int">9</Property>
+				<Property Name="Bld_version.build" Type="Int">10</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Large stage controller.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/Large stage/Large stage app/Large stage controller.exe</Property>
