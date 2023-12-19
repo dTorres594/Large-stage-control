@@ -375,7 +375,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{F8750C02-F9A3-4D5E-B73C-1D99C1F64DFA}</Property>
-				<Property Name="Bld_version.build" Type="Int">12</Property>
+				<Property Name="Bld_version.build" Type="Int">13</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Large stage controller.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/Large stage/Large stage app/Large stage controller.exe</Property>
@@ -481,7 +481,7 @@
 				<Property Name="INST_defaultDir" Type="Str">{7C5E53B9-0CC8-49B4-8873-46C4C66A2706}</Property>
 				<Property Name="INST_installerName" Type="Str">install.exe</Property>
 				<Property Name="INST_productName" Type="Str">Large stage controller</Property>
-				<Property Name="INST_productVersion" Type="Str">1.0.8</Property>
+				<Property Name="INST_productVersion" Type="Str">1.0.9</Property>
 				<Property Name="InstSpecBitness" Type="Str">32-bit</Property>
 				<Property Name="InstSpecVersion" Type="Str">20008011</Property>
 				<Property Name="MSI_arpCompany" Type="Str">Centro de Investigaciones en Optica</Property>
