@@ -375,7 +375,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{F8750C02-F9A3-4D5E-B73C-1D99C1F64DFA}</Property>
-				<Property Name="Bld_version.build" Type="Int">10</Property>
+				<Property Name="Bld_version.build" Type="Int">12</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Large stage controller.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/Large stage/Large stage app/Large stage controller.exe</Property>
@@ -410,9 +410,9 @@
 				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
 			</Item>
 			<Item Name="Large stage installer" Type="Installer">
-				<Property Name="Destination[0].name" Type="Str">Stepper motor control - DAQ</Property>
-				<Property Name="Destination[0].parent" Type="Str">{3912416A-D2E5-411B-AFEE-B63654D690C0}</Property>
-				<Property Name="Destination[0].tag" Type="Str">{3839D1C9-5B4E-4005-A5AD-D578D3C25777}</Property>
+				<Property Name="Destination[0].name" Type="Str">Large stage controller</Property>
+				<Property Name="Destination[0].parent" Type="Str">{7C5E53B9-0CC8-49B4-8873-46C4C66A2706}</Property>
+				<Property Name="Destination[0].tag" Type="Str">{548E2480-DAB3-4951-AE0C-B9D6036618D6}</Property>
 				<Property Name="Destination[0].type" Type="Str">userFolder</Property>
 				<Property Name="DestinationCount" Type="Int">1</Property>
 				<Property Name="DistPart[0].flavorID" Type="Str">_full_</Property>
@@ -478,10 +478,10 @@
 				<Property Name="INST_buildLocation" Type="Path">../builds/Large stage/Large stage installer</Property>
 				<Property Name="INST_buildLocation.type" Type="Str">relativeToCommon</Property>
 				<Property Name="INST_buildSpecName" Type="Str">Large stage installer</Property>
-				<Property Name="INST_defaultDir" Type="Str">{3839D1C9-5B4E-4005-A5AD-D578D3C25777}</Property>
+				<Property Name="INST_defaultDir" Type="Str">{7C5E53B9-0CC8-49B4-8873-46C4C66A2706}</Property>
 				<Property Name="INST_installerName" Type="Str">install.exe</Property>
 				<Property Name="INST_productName" Type="Str">Large stage controller</Property>
-				<Property Name="INST_productVersion" Type="Str">1.0.5</Property>
+				<Property Name="INST_productVersion" Type="Str">1.0.8</Property>
 				<Property Name="InstSpecBitness" Type="Str">32-bit</Property>
 				<Property Name="InstSpecVersion" Type="Str">20008011</Property>
 				<Property Name="MSI_arpCompany" Type="Str">Centro de Investigaciones en Optica</Property>
@@ -494,15 +494,15 @@
 				<Property Name="RegDest[0].dirTag" Type="Str">{DDFAFC8B-E728-4AC8-96DE-B920EBB97A86}</Property>
 				<Property Name="RegDest[0].parentTag" Type="Str">2</Property>
 				<Property Name="RegDestCount" Type="Int">1</Property>
-				<Property Name="Source[0].dest" Type="Str">{3839D1C9-5B4E-4005-A5AD-D578D3C25777}</Property>
-				<Property Name="Source[0].File[0].dest" Type="Str">{3839D1C9-5B4E-4005-A5AD-D578D3C25777}</Property>
+				<Property Name="Source[0].dest" Type="Str">{7C5E53B9-0CC8-49B4-8873-46C4C66A2706}</Property>
+				<Property Name="Source[0].File[0].dest" Type="Str">{7C5E53B9-0CC8-49B4-8873-46C4C66A2706}</Property>
 				<Property Name="Source[0].File[0].name" Type="Str">Large stage controller.exe</Property>
-				<Property Name="Source[0].File[0].Shortcut[0].destIndex" Type="Int">1</Property>
+				<Property Name="Source[0].File[0].Shortcut[0].destIndex" Type="Int">0</Property>
 				<Property Name="Source[0].File[0].Shortcut[0].name" Type="Str">Large stage controller</Property>
 				<Property Name="Source[0].File[0].Shortcut[0].subDir" Type="Str"></Property>
-				<Property Name="Source[0].File[0].Shortcut[1].destIndex" Type="Int">2</Property>
+				<Property Name="Source[0].File[0].Shortcut[1].destIndex" Type="Int">1</Property>
 				<Property Name="Source[0].File[0].Shortcut[1].name" Type="Str">Large stage controller</Property>
-				<Property Name="Source[0].File[0].Shortcut[1].subDir" Type="Str">Stage controllers</Property>
+				<Property Name="Source[0].File[0].Shortcut[1].subDir" Type="Str">Large stage controller</Property>
 				<Property Name="Source[0].File[0].ShortcutCount" Type="Int">2</Property>
 				<Property Name="Source[0].File[0].tag" Type="Str">{B838E094-38F0-4310-9E07-D69D32935483}</Property>
 				<Property Name="Source[0].FileCount" Type="Int">1</Property>
@@ -527,7 +527,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{98F1F336-A782-4A9F-ACF9-9B757BCECD72}</Property>
-				<Property Name="Bld_version.build" Type="Int">5</Property>
+				<Property Name="Bld_version.build" Type="Int">7</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Small stage.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/Small stage/Small stage app/Small stage.exe</Property>
@@ -634,7 +634,7 @@
 				<Property Name="INST_defaultDir" Type="Str">{DB31BB15-4458-419E-AD46-544C3511837F}</Property>
 				<Property Name="INST_installerName" Type="Str">install.exe</Property>
 				<Property Name="INST_productName" Type="Str">Small stage controller</Property>
-				<Property Name="INST_productVersion" Type="Str">1.0.4</Property>
+				<Property Name="INST_productVersion" Type="Str">1.0.6</Property>
 				<Property Name="InstSpecBitness" Type="Str">32-bit</Property>
 				<Property Name="InstSpecVersion" Type="Str">20008011</Property>
 				<Property Name="MSI_arpCompany" Type="Str">Centro de Investigaciones en Optica</Property>
