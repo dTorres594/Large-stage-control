@@ -23,10 +23,10 @@
 			<Item Name="Motor move data.ctl" Type="VI" URL="../Libraries/GUI/Support/Motor move data.ctl"/>
 			<Item Name="Move motor.ctl" Type="VI" URL="../Support/Move motor.ctl"/>
 			<Item Name="Stop button.ctl" Type="VI" URL="../Support/Stop button.ctl"/>
+			<Item Name="Stop motor.ctl" Type="VI" URL="../Support/Stop motor.ctl"/>
 		</Item>
 		<Item Name="DQMH Modules" Type="Folder">
 			<Item Name="Configuration.lvlib" Type="Library" URL="../Libraries/Configuration/Configuration.lvlib"/>
-			<Item Name="GUI.lvlib" Type="Library" URL="../Libraries/GUI/GUI.lvlib"/>
 			<Item Name="NI DAQ.lvlib" Type="Library" URL="../Libraries/NI DAQ/NI DAQ.lvlib"/>
 			<Item Name="TDS1002 Oscilloscope.lvlib" Type="Library" URL="../Libraries/TDS1002 Oscilloscope/TDS1002 Oscilloscope.lvlib"/>
 		</Item>
@@ -40,7 +40,6 @@
 		</Item>
 		<Item Name="Testers" Type="Folder">
 			<Item Name="Test Configuration API.vi" Type="VI" URL="../Libraries/Configuration/Test Configuration API.vi"/>
-			<Item Name="Test GUI API.vi" Type="VI" URL="../Libraries/GUI/Test GUI API.vi"/>
 			<Item Name="Test NI DAQ API.vi" Type="VI" URL="../Libraries/NI DAQ/Test NI DAQ API.vi"/>
 			<Item Name="Test TDS1002 Oscilloscope API.vi" Type="VI" URL="../Libraries/TDS1002 Oscilloscope/Test TDS1002 Oscilloscope API.vi"/>
 		</Item>
@@ -48,28 +47,6 @@
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="Tektronix TDS 200 1000 2000 Series.lvlib" Type="Library" URL="/&lt;instrlib&gt;/Tektronix TDS 200 1000 2000 Series/Tektronix TDS 200 1000 2000 Series.lvlib"/>
-			</Item>
-			<Item Name="user.lib" Type="Folder">
-				<Item Name="Reverse 2D Array (Boolean)__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/array/array.llb/Reverse 2D Array (Boolean)__ogtk.vi"/>
-				<Item Name="Reverse 2D Array (CDB)__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/array/array.llb/Reverse 2D Array (CDB)__ogtk.vi"/>
-				<Item Name="Reverse 2D Array (CSG)__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/array/array.llb/Reverse 2D Array (CSG)__ogtk.vi"/>
-				<Item Name="Reverse 2D Array (CXT)__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/array/array.llb/Reverse 2D Array (CXT)__ogtk.vi"/>
-				<Item Name="Reverse 2D Array (DBL)__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/array/array.llb/Reverse 2D Array (DBL)__ogtk.vi"/>
-				<Item Name="Reverse 2D Array (EXT)__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/array/array.llb/Reverse 2D Array (EXT)__ogtk.vi"/>
-				<Item Name="Reverse 2D Array (I8)__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/array/array.llb/Reverse 2D Array (I8)__ogtk.vi"/>
-				<Item Name="Reverse 2D Array (I16)__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/array/array.llb/Reverse 2D Array (I16)__ogtk.vi"/>
-				<Item Name="Reverse 2D Array (I32)__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/array/array.llb/Reverse 2D Array (I32)__ogtk.vi"/>
-				<Item Name="Reverse 2D Array (I64)__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/array/array.llb/Reverse 2D Array (I64)__ogtk.vi"/>
-				<Item Name="Reverse 2D Array (LVObject)__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/array/array.llb/Reverse 2D Array (LVObject)__ogtk.vi"/>
-				<Item Name="Reverse 2D Array (Path)__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/array/array.llb/Reverse 2D Array (Path)__ogtk.vi"/>
-				<Item Name="Reverse 2D Array (SGL)__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/array/array.llb/Reverse 2D Array (SGL)__ogtk.vi"/>
-				<Item Name="Reverse 2D Array (String)__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/array/array.llb/Reverse 2D Array (String)__ogtk.vi"/>
-				<Item Name="Reverse 2D Array (U8)__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/array/array.llb/Reverse 2D Array (U8)__ogtk.vi"/>
-				<Item Name="Reverse 2D Array (U16)__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/array/array.llb/Reverse 2D Array (U16)__ogtk.vi"/>
-				<Item Name="Reverse 2D Array (U32)__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/array/array.llb/Reverse 2D Array (U32)__ogtk.vi"/>
-				<Item Name="Reverse 2D Array (U64)__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/array/array.llb/Reverse 2D Array (U64)__ogtk.vi"/>
-				<Item Name="Reverse 2D Array (Variant)__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/array/array.llb/Reverse 2D Array (Variant)__ogtk.vi"/>
-				<Item Name="Reverse 2D Array__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/array/array.llb/Reverse 2D Array__ogtk.vi"/>
 			</Item>
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="8.6CompatibleGlobalVar.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/config.llb/8.6CompatibleGlobalVar.vi"/>
@@ -356,7 +333,6 @@
 			<Item Name="nilvaiu.dll" Type="Document" URL="nilvaiu.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="Stop motor.ctl" Type="VI" URL="../Support/Stop motor.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Large stage app" Type="EXE">
@@ -389,7 +365,7 @@
 				<Property Name="Source[0].itemID" Type="Str">{8B5F72C3-12A1-45DE-989F-BFFD36600233}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/My Computer/DQMH Modules/GUI.lvlib/Main.vi</Property>
+				<Property Name="Source[1].itemID" Type="Ref"></Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
 				<Property Name="Source[2].Container.applyDestination" Type="Bool">true</Property>
